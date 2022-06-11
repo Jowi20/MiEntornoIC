@@ -23,9 +23,9 @@ def index():
 	return "<h1>Hola Mundo, esto sera una calculadora web!!!</h1>"
 
 
-#if __name__ == '__main__':
-#	run(host='127.0.0.1',port=8000)
-
-
 if __name__ == '__main__':
-	run(host='0.0.0.0', port=argv[1])
+	run(host='127.0.0.1',port=8000)
+
+
+#if __name__ == '__main__':
+#	run(host='0.0.0.0', port=argv[1])
