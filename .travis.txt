@@ -6,3 +6,9 @@ install:
 addons:
   sonarcloud: true
 
+script:
+  - sonar-scanner -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=ericaudizzio -Dsonar.login=$SONAR_TOKEN -X
+  - pytest
+
+notifications:
+  slack: entornodeinte-7kl4185:CzpWZiwwkKRTQvjVTFFRgqIt
