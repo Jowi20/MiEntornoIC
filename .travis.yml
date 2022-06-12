@@ -2,7 +2,6 @@ language: python
 python:
   - "3.9"
 install:
-  - gem install faraday -v 1.8.0
   - pip install -r requirements.txt
 addons:
   sonarcloud: true
@@ -13,6 +12,9 @@ script:
 
 notifications:
   slack: entornodeinte-7kl4185:CzpWZiwwkKRTQvjVTFFRgqIt
+
+before_deploy:
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install faraday -v 1.8.0
 
 deploy:
   provider: heroku
