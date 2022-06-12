@@ -20,4 +20,4 @@ deploy:
   api_key: d16b85e5-8e41-4a20-8bb5-5a007ab1d693
   app: myapp
   on:
-    repo: jowi20/MiEntornoIC
+    repo: Jowi20/MiEntornoIC
