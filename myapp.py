@@ -23,7 +23,7 @@ def index():
 	return "<h1>Hola Mundo, esto sera una calculadora web!!!</h1>"
 
 
-if __name__ == '__main__':
+if __name__ == '__master__':
 	run(host='127.0.0.1',port=8000)
 
 

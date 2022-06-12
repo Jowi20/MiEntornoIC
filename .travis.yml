@@ -2,6 +2,7 @@ language: python
 python:
   - "3.9"
 install:
+  - gem install faraday -v 1.8.0
   - pip install -r requirements.txt
 addons:
   sonarcloud: true
